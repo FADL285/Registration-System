@@ -1,12 +1,19 @@
-<?php  include('inc/header.php');  ?> 
+<?php include('inc/header.php'); ?>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="text-center display-4 border p-3 my-5 "> Login & Register System Using PHP & MySql </h1>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="text-center display-4 p-3 my-5 "> Login & Register System Using PHP & MySql </h1>
+            <?php
+            if (isset($_SESSION['user_name'])) {
+                echo "<p class='text-center'>You are logged in</p>";
+            } else {
+                echo "<p class='text-center'>Please login or register</p>";
+            }
+            ?>
         </div>
     </div>
+</div>
 
-<?php  include('inc/footer.php');  ?> 
+<?php include('inc/footer.php'); ?>

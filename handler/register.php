@@ -13,7 +13,9 @@ if (isset($_POST['submit'])) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['name' => $name, 'email' => $email, 'mobile' => $mobile, 'password' => $password]);
 
-    $_SESSION['success'] = "Data inserted successfully";
+    $_SESSION['success'] = "You are registered successfully, Login now.";
+    header("location:../login.php");
+    die();
 }
 
 header("location:../register.php");
