@@ -2,6 +2,11 @@
 include 'inc/header.php';
 require_once 'classes/users.php';
 
+if (!isset($_SESSION['user_name'])) {
+    header('location:index.php');
+    die();
+}
+
 $users = User::getAllUsers();
 $i = 1;
 ?>

@@ -42,7 +42,7 @@
                     <a class="nav-link" href="all-data.php">All Data</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../change-password.php">Change Password</a>
+                    <a class="nav-link" href="change-password.php">Change Password</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>

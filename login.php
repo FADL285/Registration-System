@@ -29,10 +29,10 @@ if (isset($_SESSION['user_name'])) {
             <div class="border p-5 my-3">
                 <form action="handler/login.php" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="email" placeholder="Your Email">
+                        <input type="text" class="form-control" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" placeholder="Your Password">
+                        <input type="password" class="form-control" name="password" placeholder="Your Password" required>
                     </div>
                     <div class="form-group">
                         <input type="submit" name="submit" class="btn btn-block btn-primary" value="Login">
